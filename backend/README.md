@@ -18,3 +18,15 @@ Initialize and activate a virtualenv:
   $ virtualenv --no-site-packages env
   $ env/Scripts/activate
   ```
+
+#### PIP Dependencies
+
+Once you have your virtual environment setup and running, install dependencies by naviging to the `/backend` directory and running:
+
+```bash
+pip install -r requirements.txt
+```
+
+This will install all of the required packages we selected within the `requirements.txt` file.
+
+#### API Documentation 
