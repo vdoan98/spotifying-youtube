@@ -1,1 +1,7 @@
-<p>home works!</p>
+<button (click)="rotate()">Press me to rotate</button>
+
+
+<div class="container">
+    <img id="vinyl-image" [@rotatedState]='state' src="../../assets/images/vinyl.png">
+</div>
+
