@@ -1,3 +1,12 @@
+//mixin
+@mixin border-radius($value) {
+    border-radius: $value;
+    -moz-border-radius: $value;
+    -webkit-border-radius: $value;
+    -o-border-radius: $value;
+    -ms-border-radius: $value;
+}
+
 .container{
     max-height: 100vh;
 }
@@ -7,4 +16,24 @@
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
+}
+
+.button{
+    display: block;
+    margin: 0 auto;
+}
+
+#play-button{
+    display: inline-block;
+    background: #424d48;
+    color: #fff;
+    border-bottom: none;
+    width: auto;
+    padding: 15px 39px;
+    @include border-radius(5px);
+    margin-top: 25px;
+    cursor: pointer;
+    &:hover {
+        background: darken(#424d48, 10%);
+    }
 }
