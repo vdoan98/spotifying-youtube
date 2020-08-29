@@ -30,3 +30,14 @@ pip install -r requirements.txt
 This will install all of the required packages we selected within the `requirements.txt` file.
 
 #### API Documentation 
+
+
+#### Development instructions 
+
+Run the development server: 
+
+```bash
+FLASK_APP=app
+FLASK_ENV=development 
+py app.py  
+```
