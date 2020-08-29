@@ -18,5 +18,11 @@ My goal for this web application is to implement a full stack application to gai
 5. Requests Library v 2.22.0 [https://requests.readthedocs.io/en/master/] Requests is an elegant and simple HTTP library for Python, built for human beings.
 6. Youtube_dl v 2020.01.24 [https://github.com/ytdl-org/youtube-dl/] - download videos from youtube.com or other video platforms
 
+## Expanding Project
+
+1. Project is currently allowing user to create ann account using in house authentication and authorization. The user account information will be store in a database. This is not the best way to do it as there are many security risks with storing plain text password. There are two options to this problem:
+    1. Stored passwords after encrypting, hashing and salting the plain text passwords
+    2. Using a third party authentication service like Auth0 
+
 ## Credits 
 The inspiration for this project comes from TheComeUpCode's tutorial. Some functionalities have been modified for this appplication. The tutorial GitHub page can be accessed here [https://github.com/TheComeUpCode/SpotifyGeneratePlaylist].
