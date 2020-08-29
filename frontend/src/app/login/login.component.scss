@@ -1,3 +1,16 @@
+/* @extend display-flex; */
+display-flex {
+    display: flex;
+    display: -webkit-flex;
+}
+/* @extend list-type-ulli; */
+list-type-ulli {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
 /* poppins-300 - latin */
 @font-face {
     font-family: 'Poppins';
@@ -163,19 +176,6 @@ $blue-color : #6dabe4;
 $grey-light: #999;
 
 
-/* @extend display-flex; */
-display-flex {
-    display: flex;
-    display: -webkit-flex;
-}
-/* @extend list-type-ulli; */
-list-type-ulli {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-
 /**
 mixin
 **/
@@ -336,6 +336,7 @@ mixin
 /**
 Global style
 **/
+div {border-color: coral;}
 
 a:focus, a:active { text-decoration: none; outline: none; @include transition(all 300ms ease 0s); }
 input, select, textarea { outline: none; @include appearance( unset ); }
@@ -407,10 +408,11 @@ body {
 .signup-content {
     @extend display-flex;
     padding: 75px 0;
-	//flex-flow: wrap;
+    // flex-flow: wrap;
 }
 .signup-form, .signup-image, .signin-form, .signin-image{
-	width: 50%;
+    width: 50%;
+    //overflow: hidden;
 }
 .signup-image {
     margin: 0 55px;
@@ -465,6 +467,7 @@ figure {
 .form-group {
     position: relative;
     margin-bottom: 25px;
+    //overflow: hidden;
     &:last-child {
         margin-bottom: 0px;
     }
@@ -529,8 +532,7 @@ input[type=checkbox]:not(old):checked + label > span:before{
     text-align  : center;
     font-family: 'Material-Design-Iconic-Font';
     font-weight: bold;
-}
-
+  }
 .agree-term {
     display: inline-block;
     width: auto;
@@ -655,6 +657,8 @@ label.valid {
     margin-right: 20px;
     margin-top: 10px;
 }
+  
+
 
 /*
 Responsive 
